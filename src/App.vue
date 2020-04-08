@@ -1,7 +1,10 @@
 <template>
   <div id="app">
     <h1>Guess the words</h1>
-    <p>Can you spot the common theme/pattern?</p>
+    <p>
+      Enter one word at a time to try to get to the title of the artwork. Can
+      you spot the common theme/pattern?
+    </p>
     <div class="form">
       <input
         v-model="attempt"
