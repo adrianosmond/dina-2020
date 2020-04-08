@@ -142,8 +142,9 @@ export default {
   },
   methods: {
     checkWord() {
-      if (this.unsolvedWords.includes(this.attempt)) {
-        this.setSolved(this.attempt);
+      const attempt = this.attempt.trim().toLowerCase();
+      if (this.unsolvedWords.includes(attempt)) {
+        this.setSolved(attempt);
       }
 
       this.attempt = '';
