@@ -216,8 +216,13 @@ input + button {
 .drawings {
   max-width: 800px;
   display: grid;
-  grid-template-columns: 1fr 1fr;
   grid-gap: 2rem;
   margin: 4rem auto;
+}
+
+@media (min-width: 30rem) {
+  .drawings {
+    grid-template-columns: 1fr 1fr;
+  }
 }
 </style>
